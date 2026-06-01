@@ -1,0 +1,10 @@
+.productDetails {
+  font-family: Arial,sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 50%, 0.8); 
+}
+
+.productDetails p {
+  margin: 0;
+}
