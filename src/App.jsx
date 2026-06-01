@@ -31,7 +31,8 @@ const products = [
       <p>Bienvenidos a mi pagina de venta!</p>
       <p>Productos de venta: </p>
       {products.map((product) => (
-        <ProductCard name={product.name} price={product.price} isAvailable={product.isAvailable}/>
+        <ProductCard key={product.id} name={product.name} 
+          price={product.price} isAvailable={product.isAvailable}/>
       ))}
       <hr></hr>
       <Footer/>
