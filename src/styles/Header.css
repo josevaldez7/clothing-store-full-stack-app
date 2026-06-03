@@ -1,0 +1,48 @@
+.navBar {
+    font-size: 20px;
+    background: rgb(248, 133, 156);
+}
+
+.navBar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin: 15px;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navBar a:hover {
+    background-color: rgb(244, 98, 127);
+}
+
+.headerTitle {
+    padding-top: 50px;
+    font-size: 40px;
+    
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    flex: 1
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#bienvenidosMessage {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+}

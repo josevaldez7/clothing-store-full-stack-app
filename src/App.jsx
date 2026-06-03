@@ -21,19 +21,19 @@ const products = [
     name: "Shoes",
     price: 50,
     isAvailable: false
-  } 
+  }
 ];
 
   return (
     <div>
       <Header/>
-      <h1>Janet's Curvy Fashion</h1>
-      <p>Bienvenidos a mi pagina de venta!</p>
       <p>Productos de venta: </p>
-      {products.map((product) => (
-        <ProductCard key={product.id} name={product.name} 
-          price={product.price} isAvailable={product.isAvailable}/>
-      ))}
+      <div className="productDetails">
+        {products.map((product) => (
+          <ProductCard key={product.id} name={product.name} 
+            price={product.price} isAvailable={product.isAvailable}/>
+        ))}
+      </div>
       <hr></hr>
       <Footer/>
     </div>
