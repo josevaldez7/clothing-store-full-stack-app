@@ -10,13 +10,14 @@ function Header(){
                 <img src={logo} className = "logo"></img>
             </div>
             <br></br>
-            <p id="bienvenidosMessage">Bienvenidos a mi pagina de venta!</p>
+            <p id="bienvenidosMessage">Bienvenidos a mi pagina de venta!  | 
+                     Welcome to my sales page! </p>
             <nav className = "navBar">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Quien Soy Yo?</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contactenme</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Quien Soy Yo? | Who Am I? </a></li>
+                    <li><a href="#productos">Productos | Products</a></li>
+                    <li><a href="#contact">Contactenme | Contact Me</a></li>
                 </ul>
             </nav>
         </header>

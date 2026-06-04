@@ -1,0 +1,15 @@
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#aboutPicture {
+    width: 500px;
+    height: auto;
+}
+
+#aboutMeInfo {
+    font-size: 25px;
+    margin-right: 30px;
+}

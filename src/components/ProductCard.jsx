@@ -2,10 +2,10 @@
 function ProductCard(props){
     return (
             <div className="productCard">
-                <h2 className = "productTitle">{props.name}</h2>
-                <img className = "productImage"src="https://placehold.co/200x200" alt="Product Picture"></img>
-                <p>Precio: ${props.price}</p>
-                <p>Disponible: {props.isAvailable ? "Si" : "No"}</p>
+                <h2 className = "productTitle">{props.product.name}</h2>
+                <img className = "productImage"src={props.product.image} alt="Product Picture"></img>
+                <p>Precio: ${props.product.price}</p>
+                <p>Disponible: {props.product.isAvailable ? "Si" : "No"}</p>
             </div>
     )
 }
