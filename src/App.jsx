@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx'
 import ProductCard from './components/ProductCard.jsx'
 import products from './data/products.js'
 import About from './components/About.jsx'
+import Contact from './components/Contact.jsx'
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
     <hr></hr>
 
     <section id="productos">
-        <h2>Productos de venta: </h2>
+        <h1 id="productosHeading">Productos De Venta: </h1>
         <div className="productDetails">
           {products.map((product) => (
             <ProductCard key={product.id} product={product}/>
@@ -32,7 +33,7 @@ function App() {
 
 
     <section id="contact">
-          
+          <Contact/> 
     </section>
 
       <hr></hr>

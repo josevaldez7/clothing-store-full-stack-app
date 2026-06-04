@@ -1,5 +1,12 @@
 html {
   scroll-behavior: smooth;
+  background-color: rgb(250, 240, 249);
+}
+
+hr{
+  border: none;             
+  border-top: 3px solid;
+  color: rgb(248, 133, 156)
 }
 
 .productDetails {
@@ -30,6 +37,10 @@ html {
   height: auto;
   object-fit: cover;
   margin-bottom: 10px;
+}
+
+#productosHeading {
+  padding-top: 20px;
 }
 
 .productDetails .productTitle {

@@ -1,0 +1,29 @@
+.images {
+    width: 350px;
+    height: auto;
+}
+
+#contactCard {
+    padding-top: 10px;
+    padding-left: 50px;
+    width: 400px;
+}
+
+.mainContactContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.instagramContact, .facebookContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.links {
+    font-size: 30px;
+    text-align: center;
+}

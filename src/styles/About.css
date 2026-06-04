@@ -1,7 +1,7 @@
 .aboutContainer {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: 20px;
 }
 
 #aboutPicture {
@@ -12,4 +12,9 @@
 #aboutMeInfo {
     font-size: 25px;
     margin-right: 30px;
+}
+
+#aboutHeading {
+    padding-left: 20px;
+    padding-top: 30px;
 }
