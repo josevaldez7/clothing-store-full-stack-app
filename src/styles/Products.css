@@ -1,0 +1,12 @@
+.radioGroup {
+    display: flex;
+    gap: 1rem;
+    padding: 8px 16px;
+    justify-content: center;
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    accent-color: green;
+}
