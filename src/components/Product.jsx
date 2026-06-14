@@ -5,6 +5,7 @@ import '../styles/Products.css'
 
 function Product () {
     const [selectedCategory, setSelectedCategory] = useState("all");
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     const updateSelectedCategory = (e) => {
         setSelectedCategory(e.target.value);
@@ -39,8 +40,27 @@ function Product () {
         <h1 id="productosHeading">Productos De Venta: </h1>
         <div className="productDetails">
           {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product}/>
+            <ProductCard 
+                key={product.id} 
+                product={product}
+                onViewDetails={() => setSelectedProduct(product)}
+            />
           ))}
+          <br></br>
+            {selectedProduct && 
+                <div className="modal">
+                    <div className="inner-modal">
+                        <h1>{selectedProduct.name}</h1>
+                        <img src={selectedProduct.image} className="modalImage"></img>
+                        <h3>Precio: ${selectedProduct.price}</h3>
+                        <h3>Disponible? {selectedProduct.isAvailable ? "Si" : "No"}</h3>
+                        <button onClick={() => setSelectedProduct(null)} id="closeButton">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            }
+
         </div>
     </>
     )

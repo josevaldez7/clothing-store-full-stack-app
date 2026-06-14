@@ -6,7 +6,6 @@ import Contact from './components/Contact.jsx'
 import Product from './components/Product.jsx'
 
 function App() {
-
   return (
     <div>
 
